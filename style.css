@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e4e3e3;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg,#d07a7a, #8a93f3);               
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #FFF;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="datetime-local"] {
+    flex-grow: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    background-color: #FCA311;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.todo-list{
+    margin-left: -30px;
+}
+
+
+.todo-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    color: #333;
+    height: 30px;
+}
+
+.todo-list li.completed {
+    border: 2px solid #508D69;
+    color: #888;
+    text-decoration: line-through;
+}
+
+.todo-list li .task {
+    flex-grow: 5;
+}
+
+.todo-list li .datetime {
+    margin-left: 10px;
+    color: #888;
+    flex-grow: 1;
+}
+
+.todo-list li button {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.todo-list li:nth-child(odd) {
+    background-color: #f3f3f3;
+}
+
+.todo-list li:nth-child(even) {
+    background-color: #d6d6d6;
+}
+
+.warning-text{
+    border: 2px solid #D71313 !important;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    h1 {
+        font-size: 24px;
+        padding: 10px 0;
+    }
+
+
+
+    .form-group button {
+        padding: 8px 16px;
+    }
+
+    .todo-list li {
+        padding: 8px;
+    }
+
+    .todo-list li button {
+        padding: 3px 6px;
+    }
+}
