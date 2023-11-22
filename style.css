@@ -65,6 +65,9 @@ h1 {
 .todo-list li.completed {
     border: 2px solid #508D69;
     color: #888;
+}
+
+.todo-list li.completed span {
     text-decoration: line-through;
 }
 
